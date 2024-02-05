@@ -1,0 +1,1 @@
+type testometro = string | number;
