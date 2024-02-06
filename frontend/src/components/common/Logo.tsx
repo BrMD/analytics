@@ -1,9 +1,14 @@
 import React from "react";
-import Image from "next/image";
 import { LogoImage } from "@/assets/images/index";
+import ImageRender from "./ImageRender";
 
 const Logo = () => {
-  return <Image alt="logo" src={LogoImage} className="h-[3vw] w-[4vw]" />;
+  return (
+    <>
+      <ImageRender alt="logo" src={LogoImage} rounded size="xxl" />
+      {/* <Image alt="logo" src={LogoImage} className="h-14 w-16" /> */}
+    </>
+  );
 };
 
 export default Logo;
