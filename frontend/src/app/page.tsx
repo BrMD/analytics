@@ -1,18 +1,13 @@
-import CommonHeaderFooter from "@/components/HeaderFooter/CommonHeaderFooter";
-import Header from "@/components/HeaderFooter/Header";
+import DefaultLayout from "@/components/layouts/DefaultLayout";
 import Main from "@/components/common/Main";
+import HomePage from "./pages/Home";
 
 export default function Home() {
   return (
-    <>
-      {/* <Header /> */}
-      <CommonHeaderFooter as="header" className="w-max-full bg-darkTeal200">
-        <Header />
-      </CommonHeaderFooter>
-      <Main />
-      <CommonHeaderFooter as="footer" className="w-max-full bg-mediumDarkRed">
-        <Header />
-      </CommonHeaderFooter>
-    </>
+    <DefaultLayout>
+      <Main>
+        <HomePage />
+      </Main>
+    </DefaultLayout>
   );
 }

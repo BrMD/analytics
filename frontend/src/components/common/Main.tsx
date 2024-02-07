@@ -1,10 +1,11 @@
 import React from "react";
 import PaddingAndMargin from "./PaddingMargin";
+import { chidrenProps } from "@/types/global";
 
-const Main = () => {
+const Main = ({ children }: chidrenProps) => {
   return (
     <PaddingAndMargin padding="" margin="m-6">
-      <div className="h-[80vh] bg-warmYellow">Main</div>
+      <div className="">{children}</div>
     </PaddingAndMargin>
   );
 };

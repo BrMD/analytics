@@ -21,5 +21,11 @@ type ImageRenderType = {
 type commonHeaderAndFooterType = {
   as: T;
   className: string;
+  component: React.Element;
+};
+
+type chidrenProps = { children: React.ReactNode };
+
+type childrenDefault = {
   children: React.ReactNode;
 };

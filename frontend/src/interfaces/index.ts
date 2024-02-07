@@ -1,5 +1,3 @@
-import React from "react";
-
 export interface SizesImages {
   xs: { height: number; width: number };
   s: { height: number; width: number };
