@@ -2,7 +2,7 @@ import React from "react";
 import { commonHeaderAndFooterType } from "@/types/global";
 import clsx from "clsx";
 
-const CommonHeaderFooter = (props: commonHeaderAndFooterType) => {
+const ComponentWMax = (props: commonHeaderAndFooterType) => {
   const { as, component, className } = props;
   return React.createElement(
     as,
@@ -11,4 +11,4 @@ const CommonHeaderFooter = (props: commonHeaderAndFooterType) => {
   );
 };
 
-export default CommonHeaderFooter;
+export default ComponentWMax;
