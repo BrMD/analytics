@@ -1,8 +1,7 @@
-import { SizesImages } from "@/interfaces";
-import { sizesImages } from "@/constants";
+import { SizesImages, SizesButton, SizesBorder } from "@/interfaces";
 import React from "react";
 
-type classesToPaddingAndMargin = { padding: string; margin: string };
+type classesToPaddingAndMargin = { padding?: string; margin?: string };
 
 type PropsChildrenNotOptional<P = unknown> = P & {
   children: ReactNode;
@@ -28,4 +27,25 @@ type chidrenProps = { children: React.ReactNode };
 
 type childrenDefault = {
   children: React.ReactNode;
+};
+
+type propsButtonWithChildren = {
+  variant?: string;
+  size: keyof SizesButton;
+  onClickFunction?: MouseEventHandler<HTMLButtonElement>;
+  classes?: string;
+  children: React.ReactNode;
+  borderSize: keyof SizesBorder;
+  backgorund?: string;
+};
+
+type propsSetUsestateGeneric = {
+  GenericValue: T;
+  onSetStateFunctionGeneric: React.Dispatch<React.SetStateAction<T>>;
+};
+
+type usestateButtons = "domainSearch" | "emailFinder" | "emailVerifier";
+
+type inputProps = {
+  placeholder: "Email Finder" | "Domain Search" | "Email Verifier";
 };

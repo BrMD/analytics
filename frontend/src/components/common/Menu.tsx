@@ -6,7 +6,7 @@ import PaddingAndMargin from "./PaddingMargin";
 const User = () => {
   return (
     <div>
-      <PaddingAndMargin padding="pl-6" margin="">
+      <PaddingAndMargin padding="pl-6">
         <ImageRender alt="foto" src={UserImage} classes="" rounded size="s" />{" "}
       </PaddingAndMargin>
     </div>

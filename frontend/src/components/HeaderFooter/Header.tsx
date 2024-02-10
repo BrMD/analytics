@@ -5,7 +5,7 @@ import PaddingAndMargin from "../common/PaddingMargin";
 
 const Header = () => {
   return (
-    <PaddingAndMargin padding="pt-0 px-10" margin="">
+    <PaddingAndMargin padding="pt-0 px-10">
       <div className="flex justify-between h-20 items-center">
         <Logo />
         <Menu />

@@ -5,7 +5,7 @@ import ImageRender from "./ImageRender";
 const Logo = () => {
   return (
     <>
-      <ImageRender alt="logo" src={LogoImage} rounded size="xxl" />
+      <ImageRender alt="logo" src={LogoImage} rounded size="xl" />
     </>
   );
 };

@@ -14,6 +14,7 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
+        blueButton: "#03d0e7",
         turquoise: "#177E89",
         turquoise800: "#1B909D",
         turquoise600: "#1EA0AE",
@@ -29,7 +30,7 @@ const config: Config = {
         mediumDarkRed600: "#E36763",
         mediumDarkRed400: "#E77874",
         mediumDarkRed200: "#EA8885",
-        warmYellow: "#FFC857",
+        warmYellow: "#FFAA01",
         warmYellow800: "#FFCF70",
         warmYellow600: "#FFD685",
         warmYellow400: "#FFDD99",
