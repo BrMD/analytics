@@ -8,7 +8,7 @@ const ButtonsHome = ({
   GenericValue,
 }: propsSetUsestateGeneric) => {
   return (
-    <div className="teste">
+    <div className="buttonContainer">
       <Button
         onClickFunction={() => onSetStateFunctionGeneric("domainSearch")}
         size="xxl"

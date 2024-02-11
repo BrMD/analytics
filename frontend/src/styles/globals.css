@@ -33,12 +33,13 @@ body {
 .homeGrid {
   display: grid;
   grid-template-rows: minmax(30px, 50px) 1fr;
+  border-radius: 0 0 10px 10px;
 }
 
-.teste button:first-of-type {
+.buttonContainer button:first-of-type {
   border-radius: 10px 0 0 0;
 }
-.teste button:last-of-type {
+.buttonContainer button:last-of-type {
   border-radius: 0 10px 0 0;
   /* background-color: #ff9b28; */
 }

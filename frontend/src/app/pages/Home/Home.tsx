@@ -9,7 +9,7 @@ import InputHome from "./components/InputHome";
 const HomePage = () => {
   const [selected, setSelected] = useState<usestateButtons>("emailFinder");
   return (
-    <main className="w-full h-full  flex main">
+    <main className="w-full h-full flex main">
       <div className="homeGrid w-full">
         <div className="w-full flex justify-center">
           <div className="flex">
