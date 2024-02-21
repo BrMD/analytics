@@ -2,7 +2,10 @@ import { Injectable } from '@nestjs/common';
 import { Repository } from 'typeorm';
 import { Prompt } from 'src/entityPrompt/prompt.entity';
 import { InjectRepository } from '@nestjs/typeorm';
-import { CreatePromptDto } from 'src/entityPrompt/prompt.dto';
+import {
+  CreatePromptDto,
+  CommondIdSearchPromptDto,
+} from 'src/entityPrompt/prompt.dto';
 
 @Injectable()
 export class PromptsService {
@@ -14,12 +17,20 @@ export class PromptsService {
     return 'test';
   }
 
-  createPrompt(createPromptDto: CreatePromptDto) {
-    const newUser = this.promptRepository.create(createPromptDto);
-    return this.promptRepository.save(newUser);
+  testetometro() {
+    return console.log('testometro');
   }
 
-  deletePrompt(): string {
-    return 'deleteprompt';
+  createPrompt(createPromptDto: CreatePromptDto) {
+    const newPrompt = this.promptRepository.create(createPromptDto);
+    return this.promptRepository.save(newPrompt);
+  }
+
+  deletePrompt(deletePromptDto: CommondIdSearchPromptDto) {
+    return this.promptRepository.delete(deletePromptDto.id);
+  }
+
+  getPromptsById(findPrompts: CommondIdSearchPromptDto) {
+    return this.promptRepository.find({ where: { id: findPrompts.id } });
   }
 }

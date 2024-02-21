@@ -1,9 +1,10 @@
 import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
 import { prompTypes } from 'src/types';
+import { UUID } from 'crypto';
 @Entity()
 export class Prompt {
   @PrimaryGeneratedColumn('uuid')
-  id: string;
+  id: UUID;
 
   @Column()
   type: prompTypes;
