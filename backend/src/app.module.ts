@@ -5,10 +5,12 @@ import { PromptsModule } from './prompt/prompts/prompts.module';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Prompt } from './entityPrompt/prompt.entity';
+import { ScrapperModule } from './scrapper/scrapper/scrapper.module';
 
 @Module({
   imports: [
     PromptsModule,
+    ScrapperModule,
     ConfigModule.forRoot({ isGlobal: true }),
     TypeOrmModule.forRootAsync({
       imports: [ConfigModule],
